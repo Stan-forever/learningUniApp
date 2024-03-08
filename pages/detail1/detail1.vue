@@ -17,20 +17,43 @@
 				<image src="../../static/5.jpeg" mode="aspectFill"></image>
 			</swiper-item>
 		</swiper>
+		<view>---</view>
+		<button size="mini" @click="handlePush">跳转到detail3</button>
+		<button size="mini" @click="handlePush1">跳转到detail2</button>
 	</view>
 </template>
 
-<script>
-	export default {
-		data() {
-			return {
-				
-			}
-		},
-		methods: {
-			
-		}
-	}
+<script setup>
+// import {onLoad, onReady} from '@dcloudio/uni-app'
+
+const handlePush = () => {
+	uni.navigateTo({
+		url: '/pages/detail3/detail3'
+	})
+}
+
+const handlePush1 = () => {
+	uni.reLaunch({
+		url: '/pages/detail2/detail2'
+	})
+}
+
+const getPageData = async() => {
+	const res = await uni.request({
+		url: 'https://jsonplaceholder.typicode.com/posts'
+	})
+	console.log('res', res);
+}
+
+getPageData()
+
+onLoad((e) => {
+	console.log('onLoad', e);
+})
+
+onReady((e) => {
+	console.log('onReady', e);
+})
 </script>
 
 <style lang="scss">

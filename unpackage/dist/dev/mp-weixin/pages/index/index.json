@@ -1,4 +1,7 @@
 {
   "navigationBarTitleText": "uni-app",
-  "usingComponents": {}
+  "usingComponents": {
+    "com-header": "../../components/com-header/com-header",
+    "uni-header": "../../components/UniHeader/UniHeader"
+  }
 }

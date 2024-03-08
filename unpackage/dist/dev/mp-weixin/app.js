@@ -5,9 +5,19 @@ if (!Math) {
   "./pages/index/index.js";
   "./pages/detail1/detail1.js";
   "./pages/detail2/detail2.js";
+  "./pages/detail3/detail3.js";
+  "./pages/cuteAnimal/cuteAnimal.js";
 }
 const _sfc_main = {
   onLaunch: function() {
+    common_vendor.index.setTabBarBadge({
+      index: 2,
+      text: "33"
+    });
+    common_vendor.index.showTabBarRedDot({
+      index: 1,
+      text: ""
+    });
     console.log("App Launch");
   },
   onShow: function() {

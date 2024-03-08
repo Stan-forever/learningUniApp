@@ -10,8 +10,10 @@
 			"path" : "pages/detail1/detail1",
 			"style" : 
 			{
-				"navigationBarTitleText" : "",
-				"enablePullDownRefresh" : false
+				"navigationBarTitleText" : "小鹿",
+				"navigationBarBackgroundColor": "#4b01f8",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": true
 			}
 		},
 		{
@@ -21,6 +23,22 @@
 				"navigationBarTitleText" : "detail2",
 				"enablePullDownRefresh" : false
 			}
+		},
+		{
+			"path" : "pages/detail3/detail3",
+			"style" : 
+			{
+				"navigationBarTitleText" : "detail3",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/cuteAnimal/cuteAnimal",
+			"style" : 
+			{
+				"navigationBarTitleText" : "萌宠",
+				"enablePullDownRefresh" : true
+			}
 		}
 	],
 	"globalStyle": {
@@ -29,5 +47,28 @@
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	},
-	"uniIdRouter": {}
+	"uniIdRouter": {},
+	"tabBar": {
+		"selectedColor": "#42b983",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/images/tabBar/home.png",
+				"selectedIconPath": "static/images/tabBar/home-h.png"
+			},
+			{
+				"pagePath": "pages/cuteAnimal/cuteAnimal",
+				"text": "分类",
+				"iconPath": "static/images/tabBar/classify.png",
+				"selectedIconPath": "static/images/tabBar/classify-h.png"
+			},
+			{
+				"pagePath": "pages/detail2/detail2",
+				"text": "我的",
+				"iconPath": "static/images/tabBar/user.png",
+				"selectedIconPath": "static/images/tabBar/user-h.png"
+			}
+		]
+	}
 }

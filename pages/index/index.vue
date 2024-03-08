@@ -15,6 +15,16 @@
 			<view class="box"></view>
 			<view class="box"></view>
 	</scroll-view>
+	<view>---</view>
+	<navigator url="/pages/detail1/detail1?id=1&name=mike">
+		<button type="primary" size="mini" >onClick</button>
+	</navigator>
+	<view>---</view>
+	<input type="text" value="111">
+	<view>---</view>
+	<com-header></com-header>
+	<view>---</view>
+	<UniHeader></UniHeader>
 </template>
 
 <script setup>

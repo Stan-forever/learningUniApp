@@ -1,5 +1,7 @@
 {
-  "navigationBarTitleText": "",
-  "enablePullDownRefresh": false,
+  "navigationBarTitleText": "小鹿",
+  "navigationBarBackgroundColor": "#4b01f8",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true,
   "usingComponents": {}
 }

@@ -2,13 +2,38 @@
   "pages": [
     "pages/index/index",
     "pages/detail1/detail1",
-    "pages/detail2/detail2"
+    "pages/detail2/detail2",
+    "pages/detail3/detail3",
+    "pages/cuteAnimal/cuteAnimal"
   ],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uni-app",
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "selectedColor": "#42b983",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/images/tabBar/home.png",
+        "selectedIconPath": "static/images/tabBar/home-h.png"
+      },
+      {
+        "pagePath": "pages/cuteAnimal/cuteAnimal",
+        "text": "分类",
+        "iconPath": "static/images/tabBar/classify.png",
+        "selectedIconPath": "static/images/tabBar/classify-h.png"
+      },
+      {
+        "pagePath": "pages/detail2/detail2",
+        "text": "我的",
+        "iconPath": "static/images/tabBar/user.png",
+        "selectedIconPath": "static/images/tabBar/user-h.png"
+      }
+    ]
   },
   "usingComponents": {}
 }

@@ -1,1 +1,1 @@
-<view> detail2 </view>
+<view><view><button bindtap="{{a}}" size="mini">显示提示框(showToast)</button><button bindtap="{{b}}" size="mini">隐藏提示框(hideToast)</button></view><view>---</view><view><button bindtap="{{c}}">showModal</button></view><view>---</view><button bindtap="{{d}}">showActionSheet</button></view>

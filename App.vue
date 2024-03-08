@@ -1,6 +1,16 @@
 <script>
 	export default {
+		
 		onLaunch: function() {
+			uni.setTabBarBadge({
+				index: 2,
+				text: '33'
+			})
+			
+			uni.showTabBarRedDot({
+				index: 1,
+				text: ''
+			})
 			console.log('App Launch')
 		},
 		onShow: function() {
